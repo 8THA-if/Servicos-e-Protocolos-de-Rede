@@ -1,0 +1,8 @@
+# IP Rede A
+ifconfig eth0 100.0.1.1/24
+
+# IP Rede D
+ifconfig eth1 100.0.4.1/30
+
+# Gateway para r1
+ip route add default via 100.0.4.2 dev eth1

@@ -1,0 +1,5 @@
+# IP Rede A
+ifconfig eth0 100.0.1.2/24
+
+# Gateway Padrão
+ip route add default via 100.0.1.1 dev eth0

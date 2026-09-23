@@ -1,0 +1,17 @@
+#IP Rede B
+ifconfig eth0 100.0.2.1/24
+
+#IP Rede D
+ifconfig eth1 100.0.4.2/30
+
+#IP Rede E
+ifconfig eth2 100.0.5.2/30
+
+# Rota A -> r1
+ip route add 100.0.1.0/24 via 100.0.4.1 dev eth1
+
+# Rota C -> r1
+ip route add 100.0.3.0/24 via 100.0.5.1 dev eth2
+
+#Conexão internet [eth3]
+iptables -t nat -A POSTROUTING -j MASQUERADE
