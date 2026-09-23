@@ -1,4 +1,5 @@
 # Serviços e Protocolos de Rede (Projeto-Alex)
+> Feito para windows
 
 * ### Necessário para rodar:
     - [WSL Latest](https://github.com/microsoft/WSL/releases "Releases do WSL") instalado
