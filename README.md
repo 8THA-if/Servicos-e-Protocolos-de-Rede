@@ -23,7 +23,7 @@
 
 <img src="./assets/TopologiaDHCP.jpg" />
 
-[Topologia no Draw.io](https://drive.google.com/file/d/1F4HwcEQ3NwNYMbyzlM4rQEI22stLY6X0/view?usp=drive_link)
+[Topologia no Draw.io](https://drive.google.com/file/d/1VmfeN-nekgfoUXPC743uDqxRmteQUrfC/view?usp=sharing)
 
 ### Tabela de Rede:
 | Rede | Prefixo | Dispositivo | Interface | Endereço IP | Função |
