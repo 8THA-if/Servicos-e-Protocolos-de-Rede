@@ -1,13 +1,25 @@
 # Serviços e Protocolos de Rede (Projeto-Alex)
-> Feito para windows
+> Feito pensando no windows <br>
+> Quando houver "```[ ]```" deve-se mudar o que está escrito dentro, sem os colchetes
 
 * ### Necessário para rodar:
     - [WSL Latest](https://github.com/microsoft/WSL/releases "Releases do WSL") instalado
     - [Kathara](https://www.kathara.org/download.html "Página de download") instalado
     - [Docker desktop](https://docs.docker.com/desktop/ "Downloads no final da página") aberto
-    - Rode o seguinte comando no terminal:<br>
-          "``` .\pastas.bat ```"
-      > Isso ira criar as pastas necessárias para o funcionamento da rede
+    - Rode os seguintes comandos no terminal:
+    1. "``` cd C:\"Program Files"\kathara\ ```"
+    2. "``` docker pull kathara/dnsmasq ```"
+        > Adiciona a imagem do dnsmasq ao docker
+    3. "``` docker run -tid --name [nome para a imagem, minusculo e sem espaço] kathara/dnsmasq ```"
+    4. "``` docker exec -ti [nome da imagem] bash  ```"
+    5. "``` apt update ```"
+    6. "``` apt install dnsmasq -y ```"
+    7. "``` exit ```"
+    8. "``` docker commit [nome da imagem] kathara/[nome da imagem] ```"
+        > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto 
+    9. "``` cd [caminho do repositório clonado] ```"
+    10. "``` .\pastas.bat ```"
+        > Isso ira criar as pastas necessárias para o funcionamento da rede
 
 * ### Inicialização:
     - Ainda no cmd da pasta clonada, utilize "```kathara lstart```" para iniciar a emulação
@@ -44,4 +56,4 @@
 
 ### To do:
 * #### Implementar Serviço DHCP
-    > (ex.:  dnsmasq, isc-dhcp-server, udhcpd, keadhcp etc.)
+    > Vai ser "dnsmasq", mas ainda preciso entender melhor como funciona
