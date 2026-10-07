@@ -18,7 +18,7 @@
     8. "``` docker commit [nome da imagem] kathara/[nome da imagem] ```"
         > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto 
     9. "``` cd [caminho do repositório clonado] ```"
-    10. "``` .\pastas.bat ```"
+    10. "``` assets\pastas.bat ```"
         > Isso ira criar as pastas necessárias para o funcionamento da rede
 
 * ### Inicialização:
