@@ -18,6 +18,7 @@
         > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto
     8. "``` assets\pastas.bat ```"
         > Isso ira criar as pastas necessárias para o funcionamento da rede
+    - Va no arquivo [lab.conf](lab.conf#28) e troque o nome "lsort2" para o nome da sua imagem
 
 * ### Inicialização:
     - Ainda no cmd da pasta clonada, utilize "```kathara lstart```" para iniciar a emulação
@@ -52,9 +53,9 @@
 | E | 100.0.5.0/30 | r1 | eth2 | 100.0.5.2 | Roteador |
 
 ### To do:
-- [ ] Implementar Serviço DHCP
+- [X] Implementar Serviço DHCP
     > Vai ser "dnsmasq", mas ainda preciso entender melhor como funciona
-- [ ] Refazer topologia com implementação do DHCP
-- [ ] Ver se precisa mudar a [tabela de rede](#tabela-de-rede)
+- [ ] Refazer topologia e tabela com implementação do DHCP
+- [X] Ver se precisa mudar a [tabela de rede](#tabela-de-rede) (Precisa)
     > De acordo com a topologia mostrada na atividade teria algo conectado aos roteadores, mas não ainda estou em duvida sobre como será feito isso
 - [ ] Arquivos .pcap e análise de pacotes DHCP (PCAP + PDF) 
