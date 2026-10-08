@@ -6,7 +6,8 @@
     - [WSL Latest](https://github.com/microsoft/WSL/releases "Releases do WSL") instalado
     - [Kathara](https://www.kathara.org/download.html "Página de download") instalado
     - [Docker desktop](https://docs.docker.com/desktop/ "Downloads no final da página") aberto
-    - Rode os seguintes comandos no terminal:
+    - Abrir a pasta clonada no terminal e rodar os seguintes comandos:
+      > Pode ser no VS Code
     1. "``` docker pull kathara/dnsmasq ```"
         > Adiciona a imagem do dnsmasq ao docker
     2. "``` docker run -tid --name [nome para a imagem, minusculo e sem espaço] kathara/dnsmasq ```"
