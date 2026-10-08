@@ -19,7 +19,7 @@
         > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto
     8. "``` assets\pastas.bat ```"
         > Isso ira criar as pastas necessárias para o funcionamento da rede
-    - Va no arquivo [lab.conf](lab.conf#28) e troque o nome "lsort2" para o nome da sua imagem
+    - Va no arquivo [lab.conf](lab.conf#L28-L30) e troque o nome "lsort2" para o nome da sua imagem
 
 * ### Inicialização:
     - Ainda no cmd da pasta clonada, utilize "```kathara lstart```" para iniciar a emulação
