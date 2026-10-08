@@ -7,18 +7,16 @@
     - [Kathara](https://www.kathara.org/download.html "Página de download") instalado
     - [Docker desktop](https://docs.docker.com/desktop/ "Downloads no final da página") aberto
     - Rode os seguintes comandos no terminal:
-    1. "``` cd C:\"Program Files"\kathara\ ```"
-    2. "``` docker pull kathara/dnsmasq ```"
+    1. "``` docker pull kathara/dnsmasq ```"
         > Adiciona a imagem do dnsmasq ao docker
-    3. "``` docker run -tid --name [nome para a imagem, minusculo e sem espaço] kathara/dnsmasq ```"
-    4. "``` docker exec -ti [nome da imagem] bash  ```"
-    5. "``` apt update ```"
-    6. "``` apt install dnsmasq -y ```"
-    7. "``` exit ```"
-    8. "``` docker commit [nome da imagem] kathara/[nome da imagem] ```"
-        > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto 
-    9. "``` cd [caminho do repositório clonado] ```"
-    10. "``` assets\pastas.bat ```"
+    2. "``` docker run -tid --name [nome para a imagem, minusculo e sem espaço] kathara/dnsmasq ```"
+    3. "``` docker exec -ti [nome da imagem] bash  ```"
+    4. "``` apt update ```"
+    5. "``` apt install dnsmasq -y ```"
+    6. "``` exit ```"
+    7. "``` docker commit [nome da imagem] kathara/[nome da imagem] ```"
+        > Cria uma nova imagem personalizada do dnsmasq feita para esse projéto
+    8. "``` assets\pastas.bat ```"
         > Isso ira criar as pastas necessárias para o funcionamento da rede
 
 * ### Inicialização:
@@ -26,10 +24,9 @@
       > Após iniciá-la, use "```kathara list```" caso queira mais detalhes sobre a emulação
 
 * ### Testes:
-    - Todas os computadores e roteadores estão conectados entre si:
-        - Utilize ```ping [ip da máquina]``` para testar essas conexões
-          > O roteador ```r1``` tem uma "ponte" para se conectar com a internet real, você pode pingar ips reais utilizando qualquer uma das máquinas presentes na emulação
-        - Utilize ```traceroute [ip da máquina]``` para ver o caminho que o pacote precisa tomar para que chegue em outra máquina
+    - Todas os computadores e roteadores estão conectados entre si, utilize ```ping [ip da máquina]``` para testar essas conexões
+    - Utilize ```traceroute [ip da máquina]``` para ver o caminho que o pacote precisa tomar para que chegue em outra máquina
+        > O roteador ```r1``` tem uma "ponte" para se conectar com a internet real, você pode pingar ips reais utilizando qualquer uma das máquinas presentes na emulação (Ex: ping 8.8.8.8)
 
 ### Topologia:
 
@@ -55,5 +52,9 @@
 | E | 100.0.5.0/30 | r1 | eth2 | 100.0.5.2 | Roteador |
 
 ### To do:
-* #### Implementar Serviço DHCP
+- [ ] Implementar Serviço DHCP
     > Vai ser "dnsmasq", mas ainda preciso entender melhor como funciona
+- [ ] Refazer topologia com implementação do DHCP
+- [ ] Ver se precisa mudar a [tabela de rede](#tabela-de-rede)
+    > De acordo com a topologia mostrada na atividade teria algo conectado aos roteadores, mas não ainda estou em duvida sobre como será feito isso
+- [ ] Arquivos .pcap e análise de pacotes DHCP (PCAP + PDF) 
